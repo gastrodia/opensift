@@ -10,6 +10,7 @@
 #include "imgfeatures.h"
 
 #include <cxcore.h>
+#include <opencv2/opencv.hpp>
 
 static int import_oxfd_features( char*, struct feature** );
 static int export_oxfd_features( char*, struct feature*, int );

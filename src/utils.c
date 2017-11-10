@@ -104,25 +104,25 @@ char* prepend_path( const char* path, const char* file )
   @param pathname a (full) path name
   
   @return Returns the basename of \a pathname.
-*/
-char* basename( const char* pathname )
-{
-  char* base, * last_slash;
+// */
+// char* basename( const char* pathname )
+// {
+//   char* base, * last_slash;
 
-  last_slash = strrchr( pathname, '/' );
-  if( ! last_slash )
-    {
-      base = calloc( strlen( pathname ) + 1, sizeof( char ) );
-      strcpy( base, pathname );
-    }
-  else
-    {
-      base = calloc( strlen( last_slash++ ), sizeof( char ) );
-      strcpy( base, last_slash );
-    }
+//   last_slash = strrchr( pathname, '/' );
+//   if( ! last_slash )
+//     {
+//       base = calloc( strlen( pathname ) + 1, sizeof( char ) );
+//       strcpy( base, pathname );
+//     }
+//   else
+//     {
+//       base = calloc( strlen( last_slash++ ), sizeof( char ) );
+//       strcpy( base, last_slash );
+//     }
 
-  return base;
-}
+//   return base;
+// }
 
 
 

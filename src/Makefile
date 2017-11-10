@@ -1,5 +1,5 @@
-CC	= gcc
-CFLAGS	+=
+CC	= g++
+CFLAGS	+= -fpermissive
 BIN_DIR = ../bin
 INC_DIR	= ../include
 LIB_DIR	= ../lib
